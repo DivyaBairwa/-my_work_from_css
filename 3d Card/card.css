@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://th.bing.com/th/id/R.5d7cb6087ac523e05da7645b412ae1e7?rik=C%2bBe8DB6zcz8pA&riu=http%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2017%2f09%2fbackground-design-animated-gif-6.gif&ehk=GIaqOIHbntPzaZOX0R3XTDIbqXgQKGZ6Fb459XtH7Ss%3d&risl=&pid=ImgRaw&r=0);
+   
+}
+
+.birthdayCard {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+}
+
+.birthdayCard:hover {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .happy {
+    visibility: hidden;
+}
+
+.cardFront {
+
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://i0.wp.com/neighborhoodplaceofpuna.org/wp-content/uploads/2016/03/baby-mother-shadow-in-sunset.jpg?fit=683%2C1024&ssl=1);
+    border: 5px double rgb(255, 106, 7);
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 30px 0 50px rgba(0, 0, 0, 0.4);
+    transition: .6s;
+}
+
+.happy {
+    font-size:25px;
+    border:4px double black;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    margin: 30px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    transition: .1s;
+}
+
+.cardInside {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 5px double rgb(255, 106, 7);
+    position: absolute;
+    background-color: rgb(151, 249, 15);
+    width: 300px;
+    height: 400px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-family: 'Brush Script MT', cursive, bold;
+    margin: 40px;
+    color:rgb(83, 18, 235);
+}
+h2{
+    margin-left:20px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.back {
+        font-size: 25px;
+        outline-style: dotted;
+        font-family: Tahoma, sans-serif;
+        text-align: center;
+        margin: 30px;
+        background-image: linear-gradient(120deg, #f7c00e 0%, #f23f0d 100%);
+    
+}

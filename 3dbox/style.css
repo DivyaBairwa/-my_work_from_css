@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+     background-image:url(https://webstockreview.net/images/animated-clipart-sparkle-17.gif); 
+    /* background: #000000; */
+    /* background-image:url(https://images.pexels.com/photos/2763927/pexels-photo-2763927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+    /* background-image: radial-gradient(farthest-corner at 40px 40px, rgb(230, 84, 108) 0%, rgb(56, 110, 190) 100%); */
+    perspective: 580px;
+    background-repeat:no-repeat;
+    background-size:100%;
+    transition: all ease 0.5s;
+}
+
+body:hover {
+    perspective: 1500px;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transition: all 10s;
+    transform: rotateZ(0) rotateX(0) rotateY(0);
+    transform-style: preserve-3d;
+}
+
+.container:hover {
+    transform: rotateZ(0) rotateY(310deg) rotateX(90deg);
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.10s;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:nth-child(1) {
+    /* background-image: url(1.jpg); */
+    background-image:url(https://th.bing.com/th/id/R.7065a642e857dcd541d92176941fb6f3?rik=YXcCd3k7iY9fAw&riu=http%3a%2f%2fwww.hdwallpaperspulse.com%2fwp-content%2fuploads%2f2013%2f02%2fBeautiful-Animal-010.jpg&ehk=sjHAXFQhAKSbvH8VzCY9MgUvgshzTnX%2fMtwoCU%2bvY30%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center left;
+    transform: rotateY(90deg) translateX(-150px);
+}
+
+.box:nth-child(2) {
+    /* background-image: url(2.jpg); */
+    background-image:url(https://th.bing.com/th/id/R.73527b92524052bc217ebd5c05c0e7bc?rik=AJ5pcp7j7ujZHg&riu=http%3a%2f%2fwww.hdwallpaperspulse.com%2fwp-content%2fuploads%2f2013%2f02%2fbeautiful-animal-36.jpg&ehk=c%2fnne6Tkv57DPSaObk7cCet9dttBLvnK5ypUt31jSss%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center right;
+    transform: rotateY(-90deg) translateX(150px);
+}
+
+.box:nth-child(3) {
+    /* background-image: url(3.jpg); */
+    background-image:url(https://th.bing.com/th/id/R.f1fcf5802233e95464094d9975e3ad0e?rik=mKCj%2bZXz%2bUHvPQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-X6MPcIHO3i0%2fUeOSm0yVPhI%2fAAAAAAAAHk4%2fNvr2dr4FNvI%2fs1600%2fBeautiful%2bAnimals%2bWallpaper%2b2013%2b09.jpg&ehk=u2fBow2VdyoKaNGQVuRasi8rpMSGjZVZtsugO6IdSgM%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center top;
+    transform: rotateX(-90deg) translateY(-150px)
+}
+
+.box:nth-child(4) {
+    /* background-image: url(4.jpg); */
+    background-image:url(https://th.bing.com/th/id/R.15138840159870a2681f514d2f872b9a?rik=Bm6hPwEfzGu%2bCQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-wfyuSK2XO8Q%2fUFMxUpzRUtI%2fAAAAAAAAD-0%2fBrXzW7Du5n8%2fs1600%2f25-Most-Beautiful-Animals-Photography-StumbleUpon-2.jpg&ehk=SXsk15B9c84qGTChTLWjJ5AF6U6%2biwFrE%2fogzoTo0fo%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center bottom;
+    transform: rotateX(90deg) translateY(150px);
+}
+
+.box:nth-child(5) {
+/* background-image: url(5.jpg); */
+background-image:url(https://th.bing.com/th/id/R.09107b8a1043ac6bb7e8af91845709f1?rik=Di7F6c53J%2bJEqA&riu=http%3a%2f%2fwww.wallpapers13.com%2fwp-content%2fuploads%2f2016%2f02%2fBeautiful-colorful-animals-Zebras-hd-wallpaper.jpeg&ehk=fGoEuH%2fgThUz2SpvQ0epISPCk9WDfi4Xf%2fwa9TVosBg%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center bottom;
+    transform: translateZ(-150px);
+}
+
+.box:nth-child(6) {
+/* background-image: url(6.jpg); */
+background-image:url(https://i.pinimg.com/originals/af/74/21/af74216f4d37ae99ad16c734cbd7f90b.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center bottom;
+    transform: translateZ(150px);
+}

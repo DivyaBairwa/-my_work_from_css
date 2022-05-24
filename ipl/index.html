@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Slider | 2022</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+     <link rel="stylesheet" href=".\ipls.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://im.rediff.com/cricket/2020/sep/20ms-dhoni.JPG"></div>
+            <div class="swiper-slide"><img src="https://images.thequint.com/thequint%2F2020-11%2Fb94c8702-1177-4fcc-ac1f-3dfe6345b6fb%2F_AI_8554.JPG?auto=format%2Ccompress&fmt=webp"></div>
+            <div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0246/9114/6832/files/virat-kohli-ipl-2.jpg"></div>
+            <div class="swiper-slide"><img src="https://www.spotnews18.com/wp-content/uploads/2021/03/rishabh-pant-captain-of-delhi-capitals-1068x801.jpg"></div>
+            <div class="swiper-slide"><img src="https://cdn.siasat.com/wp-content/uploads/2022/03/IPL2022-March2.jpg"></div>
+            <div class="swiper-slide"><img src="https://www.mumbaiindians.com/static-assets/waf-images/3c/04/42/4-3/592-444/T22vwa7vdK.jpg"></div>
+            <div class="swiper-slide"><img src="https://www.dnpindia.in/wp-content/uploads/2020/11/Delhi-Capitals-skipper-Shreyas-Iyer_16a929b79e0_large.jpg"></div>
+            <div class="swiper-slide"><img src="https://th.bing.com/th/id/OIP.anYFAhlHK6BUW-mKUoa9XgHaKx?pid=ImgDet&rs=1"></div>
+            <div class="swiper-slide"><img src="https://starsunfolded.com/wp-content/uploads/2017/04/Nitish-Rana.jpg"></div>
+            <div class="swiper-slide"><img src="https://images.thequint.com/thequint%2F2019-04%2F64307102-e588-44ef-aedc-a4f8fd30a79d%2FGAZI_6199.JPG?auto=format%2Ccompress"></div>
+            <div class="swiper-slide"><img src="https://imagevars.gulfnews.com/2019/06/23/India-s-Mohammad-Shami-celebrates-his-hat-trick_16b838754b4_large.jpg"></div>
+            <div class="swiper-slide"><img src="https://www.cricgram.com/wp-content/uploads/2019/08/Rahul-Chahar.jpg"></div>
+            <div class="swiper-slide"><img src="https://starsunfolded.com/wp-content/uploads/2018/03/Harshal-Patel.jpg"></div>
+            <div class="swiper-slide"><img src="https://cricketaddictor.com/wp-content/uploads/2021/07/Suryakumar-Yadav-9.jpg"></div>
+            <div class="swiper-slide"><img src="https://img.jagranjosh.com/images/2022/March/2632022/TATA-IPL-2022-Teams-Players-Captains.jpg"></div>            
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+        effect: 'coverflow',
+        grabCursor:true,
+        centeredSlides: true,
+        slidePerView: 'auto',
+        coverflowEffect: {
+            rotate:500,
+            stretch:0,
+            depth:100,
+            modifier: 1,
+            slideShadow:true,
+
+        },
+     loop:true,
+     autoplay: {
+         delay: 500,
+         disableonInteraction: false,
+     },
+    });
+    </script>
+    
+</body>
+</html>
